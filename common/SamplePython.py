@@ -1,6 +1,4 @@
-#package com.scripts
 
-#object SamplePython {
   
 import argparse
 
