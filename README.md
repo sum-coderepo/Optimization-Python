@@ -1,2 +1,2 @@
 # HadoopApp
-This contains books related to big data
+This repository contains various optimization algorithms
