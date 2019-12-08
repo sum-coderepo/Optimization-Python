@@ -1,8 +1,6 @@
 import tensorflow as tf
 import numpy as np
 
-
-
 W = tf.Variable([.3],tf.float32)
 
 b = tf.Variable([-.3],tf.float32)
