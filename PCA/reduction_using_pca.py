@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 wine_data = pd.read_csv('C:\\Users\\suagrawa\\Desktop\\Spring_2019_IIIT\\OM Methods\\PCA\dataset-dimensionality-reduction-python-master\\PCA\\wine.csv')
 wine_data.head()
@@ -15,12 +16,15 @@ plt.scatter(reduced_data[:, 0], reduced_data[:, 1], label='Wine points reduced')
 plt.title("PCA sklearn")
 plt.legend()
 plt.show()
+cov_mat = np.cov(wine_data.T)
+print(cov_mat.shape)
 from pca_numpy import PCA_numpy
 reduced_data_numpy = PCA_numpy(wine_data.values)
 plt.scatter(reduced_data_numpy[:, 0], reduced_data_numpy[:, 1], label='Wine points reduced')
 plt.title("PCA numpy")
 plt.legend()
 plt.show()
+
 
 
 
